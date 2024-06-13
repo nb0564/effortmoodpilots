@@ -50,12 +50,19 @@ var jsPsychAffectGrid = (function (jspsych) {
     // css style
     const style = `
     <style>
-      .left {
-        padding: 0 0 0 0;
-      }
-      .right {
-        padding: 0 0 0 0;
-      }
+    .left{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin-left: 250px; /* Adjust this value as needed */
+    } .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin-right: 250px; /* Adjust this value as needed */
+    }
       .cell {
         width: 50px;
         height: 50px;
@@ -71,15 +78,23 @@ var jsPsychAffectGrid = (function (jspsych) {
         font-family: sans-serif;
         text-align: center;
         width: 600px;
+        margin: 0 auto;
       }
       #cellContainer {
         display: grid;
         grid-template-columns: repeat(9, 50px);
         justify-content: center;
         border-color: #808080; /* grey */
+        margin: 0 auto;
       }
       h3 {
         margin-bottom: 0px;
+      }
+      .trial-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
       }
     </style>
     `;
