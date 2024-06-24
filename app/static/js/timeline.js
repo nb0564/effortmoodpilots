@@ -190,6 +190,10 @@ var survey = {
           ]
 };
 
+var demo = {
+    type: jsPsychSurveyDemo, 
+}
+
 // explain terms of emotion 
 var thankYou = {
     type: jsPsychHtmlKeyboardResponse,
@@ -260,5 +264,6 @@ timeline = timeline.concat(video);
 timeline = timeline.concat(affectGrid); 
 timeline = timeline.concat(surveyIntro); 
 timeline = timeline.concat(survey); 
+timeline = timeline.concat(demo); 
 timeline = timeline.concat(thankYou); 
 timeline = timeline.concat(resources); 
